@@ -1,5 +1,6 @@
-body{
-    max-width: 1920px;
+html,body{
+    width: 100%;
+    height:100%;
 }
 
 .site-head{
@@ -9,6 +10,7 @@ body{
 
 .site-head .topbar{
     background-color:#0058AA  ;
+    
 }
 .site-head .topbar .tel{
     float:right;
@@ -18,14 +20,12 @@ body{
 }
 .site-head .main-nav{
     background-color:#fff;
-   
 }
 .site-head .main-nav .log-and-nav{
     
 }
 .site-head .main-nav .log-and-nav .logo{
-    float:left;
-    
+    float:left; 
 }
 .site-head .main-nav .log-and-nav .logo a{
     color:#0058AA ;
@@ -70,6 +70,7 @@ body{
     margin:0 auto;
     position: relative;
     overflow: hidden;
+    transition: background-color 0.5s linear 0s;
 }
 .site-head .main-nav .log-and-nav nav ul>li.current .picbox{
     background-color: #0058AA;
@@ -100,20 +101,20 @@ body{
 
 /* 关于我们 */
 .site-head .main-nav .log-and-nav nav ul>li.gywm .picbox::before{
-    background-position:  -2px -45px;
+    background-position:  -1px -48px;
 }
 
 .site-head .main-nav .log-and-nav nav ul>li.gywm:hover .picbox::before{
-    background-position:  -46px -45px;
+    background-position:  -47px -48px;
 }
 
 
 /* 服务建设 */
 .site-head .main-nav .log-and-nav nav ul>li.fwjs .picbox::before{
-    background-position: -3px -90px;
+    background-position: -2px -93px;
 }
 .site-head .main-nav .log-and-nav nav ul>li.fwjs:hover .picbox::before{
-    background-position: -45px -90px;
+    background-position: -45px -93px;
 }
 
 /* 产品中心 */
@@ -126,11 +127,11 @@ body{
 }
 /* 服务大厅 */
 .site-head .main-nav .log-and-nav nav ul>li.fwdt .picbox::before{
-    background-position: -2px -180px;
+    background-position: -1px -181px;
 }
 
 .site-head .main-nav .log-and-nav nav ul>li.fwdt:hover .picbox::before{
-    background-position: -47px -180px;
+    background-position: -47px -182px;
 }
 
 
@@ -177,10 +178,19 @@ body{
 
 /* banner */
 .banner{
-    width: 100vw;
+    width:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
 }
 .banner img{
-    width:100%;
+    width: 100%;
+    vertical-align: top;
+    transform: scale(1);
+    transition: transform 0.5s ease 0s;
+} 
+.banner img:hover{
+    transform: scale(1.05);
 }
 .banner .center-wrap{
     position: relative;
@@ -208,4 +218,225 @@ body{
 }
 .banner .center-wrap .dot li:hover{
     background-color:#0058AA;
+}
+
+
+/* 了解我们 */
+/* 商品小轮播图 */
+.carousel{
+    background-color:#fff;
+    width:1105px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel ul li{
+    float:left;
+    padding:0 25px;
+    
+}
+.carousel ul{
+    margin:0 auto;
+    margin-top: 38px;
+}
+.carousel ul li a .picbox img{
+    width:171px;
+    height:176px;
+    transition: transform 0.5s ease 0s;
+}
+ .carousel ul li a .picbox{
+    margin-bottom: 10px;
+    width:171px;
+    height:176px;
+    overflow: hidden;
+}
+ .carousel ul li a .wordbox p{
+    color:#838383;
+    font-size:18px;
+}
+/* 商品轮播触碰放大效果 */
+.carousel ul li:hover a .picbox img{
+    transform: scale(1.1);
+}
+ .carousel .prev{
+    position: absolute;
+    top:50%;
+    left:-26px;
+    margin-top:-24px;
+    height:48px;
+    width:48px;
+    background: url(../images/icons2.png) no-repeat -16px -245px;
+    
+}
+ .carousel .prev:hover{
+    background-position:-16px -156px ;
+}
+ .carousel .next{
+    position: absolute;
+    top:50%;
+    right:-48px;
+    margin-top:-24px;
+    height:48px;
+    width:48px;
+    background: url(../images/icons2.png) no-repeat -16px -88px;
+    
+}
+ .carousel .next:hover{
+    background-position:-16px -20px ;
+}
+
+/* about */
+
+.ljwm{
+    height:456px;
+    background-color: #fff;
+}
+
+.ljwm .about{
+    font-size:32px;
+    color:#696868;
+    text-align: center;
+    margin-top: 32px;
+    
+}
+
+.ljwm .about .about-body{
+    width:1201px;
+    height: 200px;
+    border-top:1px solid #808080;
+    position: relative;
+}
+
+.ljwm .about .about-body .small-about{
+    width: 160px;
+    background-color:#fff;
+    position: absolute;
+    top:-8px;
+    left:50%;
+    margin-left: -80px;
+        
+    
+}
+
+.ljwm .about .about-body .small-about span{
+    font-size:18px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #0058AA;
+    padding:0 9px 11px; 
+}
+
+.ljwm .about .about-body>ul{
+    margin-top: 76px;
+}
+
+.ljwm .about .about-body .wordbox{
+    width:238px;
+    text-align: left;
+    float:left;
+    margin-right: 147px;
+}
+.ljwm .about .about-body .wordbox h3{
+    font-size:25px;
+    color:#0058AA;
+    
+}
+.ljwm .about .about-body .wordbox h4{
+    font-size:21px;
+    color: #5A5A5A;
+    line-height: 41px;
+}
+.ljwm .about .about-body .wordbox .line{
+    width: 142px;
+    height:4px;
+    background-color: #0058AA;
+}
+.ljwm .about .about-body .wordbox p{
+    font-size:16px;
+    color:#7b7c7c;
+    width:238px;
+    padding: 20px 0 27px;
+}
+.ljwm .about .about-body .wordbox a{
+    font-size:22px;
+    line-height:38px ;
+    background-color: #0058AA;
+    padding:0 29px;
+    color:#fff;
+    display: inline-block;
+    transition: all 0.75s ease 0s;
+    box-sizing: border-box;
+    border:2px solid #0058AA;
+}
+
+.ljwm .about .about-body .wordbox:hover a{
+    background-color:#fff;
+    color:#0058AA;
+    border:2px solid #0058AA;
+}
+
+
+.ljwm .about .about-body .picbox{
+    width:384px;
+    height:256px;
+    background-color:#0058AA ;
+    float:left;
+    margin-right:99px ;
+}
+.ljwm .about .about-body .messagebox{
+    box-sizing: border-box;
+    
+}
+.ljwm .about .about-body .messagebox>ul>li{
+    width:273px;
+    height:61px;
+    margin: 10px 0;
+    background-color: #ccc;
+    transition: background-color 0.25s linear 0s;
+}
+
+.ljwm .about .about-body .messagebox>ul>li:hover{
+    background-color: #0058AA;
+}
+
+.ljwm .about .about-body .messagebox>ul>li a div{
+    float:left;
+    color:#fff;
+}
+
+.ljwm .about .about-body .messagebox>ul>li a div.iconbox{
+    width:40px;
+    height:34px;
+    background: url(../images/icons.png) no-repeat ;
+    margin: 13px 19px 13px 30px;
+}
+
+.ljwm .about .about-body .messagebox>ul>li:nth-child(1) a div.iconbox{
+    background-position: -42px -443px;
+}
+
+.ljwm .about .about-body .messagebox>ul>li:nth-child(2) a div.iconbox{
+    background-position: -41px -500px;
+}
+
+
+.ljwm .about .about-body .messagebox>ul>li:nth-child(3) a div.iconbox{
+    background-position: -44px -394px;
+}
+
+
+.ljwm .about .about-body .messagebox>ul>li a div.m-wordbox {
+    
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.ljwm .about .about-body .messagebox>ul>li a div.m-wordbox h5{
+    font-size:22px;
+}
+.ljwm .about .about-body .messagebox>ul>li a div.m-wordbox h6{
+    font-size:12px;
+    line-height: 12px;
 }
