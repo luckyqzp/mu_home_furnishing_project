@@ -1,3 +1,7 @@
+body{
+    max-width: 1920px;
+}
+
 .site-head{
     height:161px;
     min-width: 1201px;
@@ -30,7 +34,6 @@
     color:#0058AA;
     font-size:64px;
     line-height: 91px;
-    margin-top:19px;
 }
 .site-head .main-nav .log-and-nav{
     width:862px;
@@ -171,3 +174,38 @@
     background: url(../images/icons.png) no-repeat -1px -226px ;
 }
 
+
+/* banner */
+.banner{
+    width: 100vw;
+}
+.banner img{
+    width:100%;
+}
+.banner .center-wrap{
+    position: relative;
+}
+.banner .center-wrap .dot{
+    position: absolute;
+    bottom: 50px;
+    left:50%;
+    width:42px;
+    margin-left:-21px;
+}
+.banner .center-wrap .dot li{
+    float:left;
+    width:10px;
+    height:10px;
+    background-color:#fff;
+    border-radius: 50%;
+    margin-right:6px;
+}
+.banner .center-wrap .dot li.current{
+    background-color:#0058AA;
+}
+.banner .center-wrap .dot li:last-child{
+    margin-right:0px;
+}
+.banner .center-wrap .dot li:hover{
+    background-color:#0058AA;
+}
