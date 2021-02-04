@@ -1,0 +1,173 @@
+.site-head{
+    height:161px;
+    min-width: 1201px;
+}
+
+.site-head .topbar{
+    background-color:#0058AA  ;
+}
+.site-head .topbar .tel{
+    float:right;
+    line-height: 40px;
+    font-size:18px;
+    color:#fff;
+}
+.site-head .main-nav{
+    background-color:#fff;
+   
+}
+.site-head .main-nav .log-and-nav{
+    
+}
+.site-head .main-nav .log-and-nav .logo{
+    float:left;
+    
+}
+.site-head .main-nav .log-and-nav .logo a{
+    color:#0058AA ;
+}
+.site-head .main-nav .log-and-nav .logo a h1{
+    color:#0058AA;
+    font-size:64px;
+    line-height: 91px;
+    margin-top:19px;
+}
+.site-head .main-nav .log-and-nav{
+    width:862px;
+    margin-top:19px;
+    float: left;
+}
+
+.site-head .main-nav .log-and-nav nav{
+    float:right;
+    height:121px;
+    
+}
+
+.site-head .main-nav .log-and-nav nav ul>li{
+    float:left;
+    padding-right:58px;
+    
+    
+}
+.site-head .main-nav .log-and-nav nav ul>li a{
+    display: block;
+    width:64px;
+    color:#545454;
+    
+}
+.site-head .main-nav .log-and-nav nav ul>li:last-child{
+    padding-right:0px;
+}
+
+.site-head .main-nav .log-and-nav nav ul>li .picbox{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.site-head .main-nav .log-and-nav nav ul>li.current .picbox{
+    background-color: #0058AA;
+}
+.site-head .main-nav .log-and-nav nav ul>li:hover .picbox{
+    background-color: #0058AA;
+}
+
+.site-head .main-nav .log-and-nav nav ul>li .picbox::before{
+    width:35px;
+    height:33px;
+    position: absolute;
+    margin-top: 9px;
+    margin-left:9px;
+    content:'';
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+}
+
+/* 网站首页 */
+.site-head .main-nav .log-and-nav nav ul>li.wzsy .picbox::before{
+    background-position: -47px 0px;
+}
+
+.site-head .main-nav .log-and-nav nav ul>li:hover .picbox::before{
+    background-position: -47px 0px;
+}
+
+/* 关于我们 */
+.site-head .main-nav .log-and-nav nav ul>li.gywm .picbox::before{
+    background-position:  -2px -45px;
+}
+
+.site-head .main-nav .log-and-nav nav ul>li.gywm:hover .picbox::before{
+    background-position:  -46px -45px;
+}
+
+
+/* 服务建设 */
+.site-head .main-nav .log-and-nav nav ul>li.fwjs .picbox::before{
+    background-position: -3px -90px;
+}
+.site-head .main-nav .log-and-nav nav ul>li.fwjs:hover .picbox::before{
+    background-position: -45px -90px;
+}
+
+/* 产品中心 */
+.site-head .main-nav .log-and-nav nav ul>li.cpzx .picbox::before{
+    background-position: -1px -135px;
+}
+
+.site-head .main-nav .log-and-nav nav ul>li.cpzx:hover .picbox::before{
+    background-position: -46px -135px;
+}
+/* 服务大厅 */
+.site-head .main-nav .log-and-nav nav ul>li.fwdt .picbox::before{
+    background-position: -2px -180px;
+}
+
+.site-head .main-nav .log-and-nav nav ul>li.fwdt:hover .picbox::before{
+    background-position: -47px -180px;
+}
+
+
+
+.site-head .main-nav .log-and-nav nav ul>li .wordbox{
+    font-size:16px;
+    margin-top:20px;
+}
+
+.site-head .main-nav .search{
+    float:right;
+    margin-top: 51px;
+    
+    
+}
+.site-head .main-nav .search input[type=text]{
+    width:229px;
+    height:37px;
+    color:#545454;
+    line-height: 18px;
+    padding-left:15px;
+    outline: none;
+    border:1px solid #d3d3d3;
+    float: left;
+}
+.site-head .main-nav .search .btn{
+    width:48px;
+    height:39px;
+    background-color: #0058AA ;
+    display: block;
+    float: right;
+    position: relative;
+}
+.site-head .main-nav .search .btn::before{
+    width: 33px;
+    height:33px;
+    position: absolute;
+    top:3px;
+    left:7.5px;
+    content: '';
+    background: url(../images/icons.png) no-repeat -1px -226px ;
+}
+

@@ -1,0 +1,17 @@
+body {
+    font-family: "微软雅黑";
+}
+
+.clearfix {
+  overflow: hidden;
+}
+.clearfix::after {
+  content: "";
+  float: both;
+  display: block;
+  overflow: hidden;
+}
+.center-wrap {
+    width: 1201px;
+    margin: 0 auto;
+  }
