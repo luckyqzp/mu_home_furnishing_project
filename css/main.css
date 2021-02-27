@@ -1,14 +1,10 @@
-html,body{
-    width: 100%;
-    height:100%;
-}
-
 .site-head{
     height:161px;
     min-width: 1201px;
 }
 
 .site-head .topbar{
+    min-width: 1201px;
     background-color:#0058AA  ;
     
 }
@@ -181,7 +177,7 @@ html,body{
     width:100%;
     box-sizing: border-box;
     overflow: hidden;
-
+    display: none;
 }
 .banner img{
     width: 100%;
@@ -228,6 +224,7 @@ html,body{
     width:1105px;
     margin: 0 auto;
     position: relative;
+    display: none;
 }
 
 .carousel ul li{
@@ -257,8 +254,9 @@ html,body{
 /* 商品轮播触碰放大效果 */
 .carousel ul li:hover a .picbox img{
     transform: scale(1.1);
+    
 }
- .carousel .prev{
+ .con-style .prev{
     position: absolute;
     top:50%;
     left:-26px;
@@ -268,10 +266,10 @@ html,body{
     background: url(../images/icons2.png) no-repeat -16px -245px;
     
 }
- .carousel .prev:hover{
+ .con-style .prev:hover{
     background-position:-16px -156px ;
 }
- .carousel .next{
+ .con-style .next{
     position: absolute;
     top:50%;
     right:-48px;
@@ -281,7 +279,7 @@ html,body{
     background: url(../images/icons2.png) no-repeat -16px -88px;
     
 }
- .carousel .next:hover{
+ .con-style .next:hover{
     background-position:-16px -20px ;
 }
 
@@ -290,6 +288,7 @@ html,body{
 .ljwm{
     height:456px;
     background-color: #fff;
+    display: none;
 }
 
 .ljwm .about{
@@ -439,4 +438,71 @@ html,body{
 .ljwm .about .about-body .messagebox>ul>li a div.m-wordbox h6{
     font-size:12px;
     line-height: 12px;
+}
+
+/* recommend */
+.recommend{
+    height:590px;
+    
+    background-color:#EFF0F4;
+    display: none;
+}
+.recommend .head{
+    text-align: center;
+}
+.recommend .head h2{
+    font-size:32px;
+    color: #696868;
+    padding-top:70px;
+}
+.recommend .head span{
+    font-size:18px;
+    color: #9B9B9B;
+    
+}
+.recommend .head .line{
+    width:93px;
+    height:3px;
+    background-color: #0058AA;
+    margin: 16px auto 41px;
+}
+
+
+.recommend .main .picbox{
+    position: relative;
+    width:1095px;
+    margin:0 auto;
+}
+.recommend .main .picbox>ul>li{
+    float:left;
+    position: relative;
+    padding:0 10px;
+}
+.recommend .main .picbox>ul>li:last-child{
+    padding-right:0;
+}
+
+.recommend .main .picbox>ul>li a{
+    width:345px;
+    height:326px;
+}
+.recommend .main .picbox>ul>li img{
+    width:100%;
+    height:100%;
+}
+.recommend .main .picbox>ul>li a .info{
+    position: absolute;
+    bottom: 5px;
+    color:#fff;
+    line-height: 45px;
+    padding-left:20px;
+    width:345px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.recommend .main .prev,
+.recommend .main .next
+{
+    top:180px;
 }

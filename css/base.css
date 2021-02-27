@@ -12,6 +12,7 @@ body {
   overflow: hidden;
 }
 .center-wrap {
+  /* 让内容居中对齐 */
     width: 1201px;
     margin: 0 auto;
   }
