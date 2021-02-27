@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <!-- header -->
     <header class="site-head">
         <div class="topbar">
             <div class="center-wrap clearfix">
@@ -71,18 +72,27 @@
             
         </div>
     </header>
-    <section class="banner">
-        <a href="#">
-            <img src="./images/banner01.png" alt="">
-        </a>
-       <div class="center-wrap">
-           <ul class="dot">
-               <li class="current"></li>
-               <li></li>
-               <li></li>
-           </ul>
-       </div>
+    <!-- banner -->
+    <section class="banner" id="banner">
+        <ul class="carousel_list clearfix" id="carousel_list">
+            <li>
+                <img src="./images/banner01.png" alt="">
+            </li>
+            <li>
+                <img src="./images/banner02.png" alt="">
+            </li>
+            <li>
+                <img src="./images/banner03.png" alt="">
+            </li>
+        </ul>
+       <ol class="circles" id="circles_ol">
+          <li data-n="0" class=current></li>
+          <li data-n="1"></li>
+          <li data-n="2"></li>
+       </ol>
     </section>
+
+    <script src="./js/carousel.js"></script>
 
     <section class="carousel con-style">
         <div class="center-wrap">
