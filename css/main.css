@@ -177,17 +177,17 @@
     position:relative;
     overflow: hidden;
 }
-.banner .carousel_list{
+.banner .banner_list{
     width:400%;
     /* overflow:hidden; */
     overflow: hidden;
     transition: transform 0.5s ease 0s;
 }
-.banner .carousel_list li{
+.banner .banner_list li{
     float:left;
     width:25%;
 }
-.banner .carousel_list li img{
+.banner .banner_list li img{
     width:100%;
     vertical-align: middle;
 }
@@ -221,44 +221,67 @@
 
 /* 了解我们 */
 /* 商品小轮播图 */
-.carousel{
+.carousel {
     background-color:#fff;
     width:1105px;
     margin: 0 auto;
     position: relative;
-    display: none;
-}
-
-.carousel ul li{
-    float:left;
-    padding:0 25px;
     
 }
-.carousel ul{
-    margin:0 auto;
-    margin-top: 38px;
+.carousel .carousel-center{
+    overflow: hidden;
+    width:1105px;
 }
-.carousel ul li a .picbox img{
-    width:171px;
-    height:176px;
-    transition: transform 0.5s ease 0s;
+
+.carousel .carousel_list{
+    width:2210px;
+    position: relative;
+    left:0;
+    top:0;
+    margin: 0 auto;
+    margin-top: 38px;  
+    transition: left .5s ease 0s;
+
 }
- .carousel ul li a .picbox{
-    margin-bottom: 10px;
+
+.carousel .carousel_list li{
+    box-sizing: border-box;
+    float:left;
+    padding:0 25px; 
+    width:221px;
+    
+}
+.carousel .carousel_list li a .picbox{
+    /* 将放大效果限制在图片中 */
     width:171px;
     height:176px;
     overflow: hidden;
 }
- .carousel ul li a .wordbox p{
+
+.carousel .carousel_list li a .picbox img{
+    width:171px;
+    height:176px;
+    transition: transform 0.5s ease 0s;
+}
+ .carousel .carousel_list li a .picbox{
+    margin-bottom: 10px;
+    width:171px;
+    height:176px;
+    /* overflow: hidden; */
+}
+
+ .carousel .carousel_list li a .wordbox p{
     color:#838383;
     font-size:18px;
+    line-height: 24px;
+    
 }
 /* 商品轮播触碰放大效果 */
-.carousel ul li:hover a .picbox img{
+.carousel .carousel_list li:hover a .picbox img{
     transform: scale(1.1);
     
 }
- .con-style .prev{
+ .carousel .leftbtn{
     position: absolute;
     top:50%;
     left:-26px;
@@ -268,10 +291,10 @@
     background: url(../images/icons2.png) no-repeat -16px -245px;
     
 }
- .con-style .prev:hover{
+.carousel .leftbtn:hover{
     background-position:-16px -156px ;
 }
- .con-style .next{
+ .carousel .rightbtn{
     position: absolute;
     top:50%;
     right:-48px;
@@ -281,7 +304,7 @@
     background: url(../images/icons2.png) no-repeat -16px -88px;
     
 }
- .con-style .next:hover{
+.carousel .rightbtn:hover{
     background-position:-16px -20px ;
 }
 
