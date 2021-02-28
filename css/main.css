@@ -279,7 +279,7 @@
     transform: scale(1.1);
     
 }
- .carousel .leftbtn{
+ .leftbtn{
     position: absolute;
     top:50%;
     left:-26px;
@@ -289,10 +289,10 @@
     background: url(../images/icons2.png) no-repeat -16px -245px;
     
 }
-.carousel .leftbtn:hover{
+.leftbtn:hover{
     background-position:-16px -156px ;
 }
- .carousel .rightbtn{
+.rightbtn{
     position: absolute;
     top:50%;
     right:-48px;
@@ -302,7 +302,7 @@
     background: url(../images/icons2.png) no-repeat -16px -88px;
     
 }
-.carousel .rightbtn:hover{
+.rightbtn:hover{
     background-position:-16px -20px ;
 }
 
@@ -478,59 +478,67 @@
     line-height: 12px;
 }
 
+
+
+
+
 /* recommend */
 .recommend{
-    height:590px;
-    
     background-color:#EFF0F4;
-    display: none;
+    margin-top: 82px;
+    height:590px;
 }
-.recommend .head{
+.recommend .center-wrap{
+    width: 1074px;
+}
+
+.con-head{
     text-align: center;
 }
-.recommend .head h2{
+.con-head h2{
     font-size:32px;
     color: #696868;
     padding-top:70px;
 }
-.recommend .head span{
+
+.con-head span{
     font-size:18px;
     color: #9B9B9B;
-    
 }
-.recommend .head .line{
+
+.con-head .line{
     width:93px;
     height:3px;
     background-color: #0058AA;
     margin: 16px auto 41px;
 }
 
-
-.recommend .main .picbox{
+.recommend .recommend_list{
+    width:3339px;
+    overflow: hidden;
     position: relative;
-    width:1095px;
-    margin:0 auto;
+    left:0;
+    top:0;
+    transition: left 0.25s ease 0s;
 }
-.recommend .main .picbox>ul>li{
+.recommend .recommend_list li{
     float:left;
-    position: relative;
-    padding:0 10px;
-}
-.recommend .main .picbox>ul>li:last-child{
-    padding-right:0;
+    padding:0 13px;
+    
 }
 
-.recommend .main .picbox>ul>li a{
+.recommend .recommend_list>li a{
     width:345px;
     height:326px;
+    position: relative;
 }
-.recommend .main .picbox>ul>li img{
+.recommend .recommend_list>li img{
     width:100%;
     height:100%;
 }
-.recommend .main .picbox>ul>li a .info{
+.recommend .recommend_list>li a .info{
     position: absolute;
-    bottom: 5px;
+    bottom:5px;
     color:#fff;
     line-height: 45px;
     padding-left:20px;
@@ -538,9 +546,18 @@
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, .5);
 }
-
-.recommend .main .prev,
-.recommend .main .next
-{
-    top:180px;
+.recommend .recommend-center{
+    position: relative;
+    height:326px;
+    width: 1113px;
+    
 }
+.recommend .recommend-center .picbox{
+    width: 1113px;
+    overflow: hidden;
+}
+.recommend .recommend-center .recommend_rightbtn{
+    right:-48px;
+}
+
+

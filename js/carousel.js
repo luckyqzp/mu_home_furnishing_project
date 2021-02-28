@@ -10,7 +10,7 @@
     //右按钮点击事件
     right_btn.onclick = function () {
         idx++;
-        if (idx >= 5) idx = 5;  //idx=5 不能用{}包裹，否则会出错
+        if (idx >= 4) idx = 4;  //idx=5 不能用{}包裹，否则会出错
         {
             carousel_list.style.left = '-221' * idx + 'px';
         }
