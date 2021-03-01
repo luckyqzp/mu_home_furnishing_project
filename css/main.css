@@ -613,7 +613,6 @@
    
 }
 
-
 .news .news-list li .icon-box span{
     font-size:40px;
     line-height: 65px;
@@ -635,4 +634,46 @@
     font-size: 18px;
     color: #4A4A4A;
     text-align: left;
+}
+
+
+/* contacts */
+.contacts{
+    background: #06142F;
+    height: 210px;
+}
+.contacts h3{
+    font-size: 48px;
+    color: #FFFFFF;
+    line-height: 210px;
+    margin-right: 101px;
+}
+.contacts .contacts-list li{
+    float: left; 
+}
+.contacts dl{
+    color: #FFFFFF;
+    width: 300px;
+    margin-top: 53px;
+}
+.contacts dl dd,
+.contacts dl dt{
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.contacts dl dt{
+    float:left
+}
+
+/* copyright */
+.copyright {
+    background: #202C46;
+    height: 30px;
+}
+.copyright h3{
+    line-height: 30px;
+    text-align: center;
+    font-size:14px;
+    color:#fff;
 }
